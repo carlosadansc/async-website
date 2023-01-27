@@ -1,0 +1,193 @@
+
+/*General styles----------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.otf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Bold";
+  src: url("../fonts/SpaceGrotesk-Bold.otf");
+}
+
+::selection {
+  background-color: #ff98f6 !important;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk Regular", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+p{
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff !important;
+}
+
+li{
+  list-style:none;
+}
+
+.container{
+  width: 100%;
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-center-container {
+  display: flex;
+  align-items: center;
+}
+
+.to-right{
+  width: 100%;
+  text-align: right;
+}
+
+.active{
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+}
+
+.show-text-onHover-link{
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*Mobile view styles--------------------------------------------------------------------------------------------------------------*/
+section {
+  height: 100vh;
+  padding: 0 35px 0 35px;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  margin: 0;
+}
+
+.subtitle{
+  font-size: 25px;
+  line-height: 1.1;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  margin: 0;
+}
+
+.subtitle2{
+  font-size: 22px;
+  line-height: 1.1;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  margin: 0;
+}
+
+.vertical-contact-link {
+  writing-mode: vertical-rl;
+  display: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #ffffff !important;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+}
+
+.padding-container{
+  padding: 90px 35px 50px 35px;
+  display: flow-root;
+}
+
+/*Tablet view styles--------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle{
+    font-size: 50px;
+  }
+
+  section {
+    padding: 0 50px 0 50px;
+  }
+}
+
+/*Desktop view styles----------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+
+  p{
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 0 70px 0 70px;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .subtitle{
+    font-size: 3rem;
+  }
+
+  .vertical-contact-link {
+    display: inline-block;
+  }
+
+  .show-text-onHover-link{
+    width: 100px;
+  }
+
+  .show-text-onHover-link:hover {
+    font-size: 0;
+  }
+  
+  .show-text-onHover-link:hover:before {
+    content: attr(data-hover);
+    font-size: 16px;
+    font-weight: bold;
+    animation-duration: 1s;
+    animation-name: fadeIn;
+  }
+
+  .padding-container{
+    padding: 90px 70px 50px 70px;
+    display: flow-root;
+  }
+}
+
+/*Animations-------------------------------------------------------------------------------------------------------------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

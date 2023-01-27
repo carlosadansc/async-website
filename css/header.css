@@ -1,0 +1,172 @@
+ 
+nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  transition: all 0.5s ease-out;
+  padding: 30px 30px 0 30px;
+}
+
+.nav-up{
+  top: -100px;
+}
+
+.logo img{
+  height: 30px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+}
+
+
+.nav-links li{
+  list-style: none;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #ffffff;
+} 
+
+/* nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  transition: all 0.5s ease-out;
+  padding: 30px 30px 0 30px;
+  z-index: 1;
+}
+
+.nav-up{
+  top: -100px;
+}
+
+.logo img{
+  height: 30px;
+}
+
+.nav-links{
+  background-color: #000000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s, opacity 0.5s ease-in;
+}
+
+
+.nav-links li{
+  opacity: 0;
+  padding: 70px 35px;
+}
+
+.nav-links li a{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.burger{
+  display: block;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #ffffff;
+} */
+
+/*Mobile view---------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px){
+
+  nav{
+    padding: 30px 35px 0 35px;
+    z-index: 1;
+  }
+
+  .nav-links{
+      background-color: #000000;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility 0.5s, opacity 0.5s ease-in;
+  }
+
+  .nav-links li{
+      opacity: 0;
+      padding: 70px 35px;
+  }
+
+  .nav-links li a{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+  .burger{
+      display: block;
+  }
+}
+
+.nav-active{
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+

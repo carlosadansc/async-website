@@ -1,0 +1,73 @@
+section:nth-child(1) {
+    background-image: url("../resources/bkgnd-s1-services-mobile.jpg");
+    background-size: cover;
+  } 
+
+
+.padding-container p {
+    width: 100%;
+    padding-bottom: 90px;
+    display: inline-block;
+  } 
+  
+
+  .swiper-container {
+    width: 100%;
+    padding-bottom: 90px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
+  
+  footer{
+    background-image: url('../resources/bkgnd-footer-services-mobile.jpg');
+    background-size: cover;
+  }
+
+
+  /*Tablet view styles-------------------------------------------------------------------------------------------------------------------*/
+  @media only screen and (min-width: 768px) {
+ 
+  }
+  
+  /*Desktop view styles----------------------------------------------------------------------------------------------------------------*/
+  @media only screen and (min-width: 992px) {
+    section:nth-child(1) {
+      background-image: url("../resources/bkgnd-s1-services.jpg");
+      background-size: cover;
+    }
+  
+    section:nth-child(1) p {
+      width: 50%;
+    }  
+  
+  
+  .padding-container p {
+      width: 80%;
+      padding-bottom: 90px;
+      display: inline-block;
+    } 
+    
+  
+    .swiper-container {
+      width: 100%;
+      padding-bottom: 90px;
+    }
+  
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 500px;
+      height: 300px;
+    }
+    
+    footer{
+      background-image: url('../resources/bkgnd-footer-services.jpg');
+      background-size: cover;
+    }
+  
+  }

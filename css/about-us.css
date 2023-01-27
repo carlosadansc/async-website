@@ -1,0 +1,77 @@
+section:nth-child(1) {
+    background-image: url("../resources/bkgnd-s1-about-us-mobile.jpg");
+    background-size: cover;
+  }
+
+  section:nth-child(1) p {
+    width: 50%;
+    display: none;
+  }  
+  
+  section:nth-child(2) {
+    background: #000000;
+  }
+
+  section:nth-child(2) p {
+    padding-top: 50px;
+    width: 100%;
+    display: inline-block;
+  } 
+  
+
+  /* .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 50vh;
+  }
+  
+  .text-item-slider-container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+}
+
+  .text-item-slider{
+      position: absolute;
+      bottom: 0;
+  } */
+
+  footer {
+    background-image: url("../resources/bkgnd-footer-about-us-mobile.jpg");
+    background-size: cover;
+  }
+
+    /*Tablet view styles--------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Desktop view styles----------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+
+  section:nth-child(1) {
+    background-image: url("../resources/bkgnd-s1-about-us.jpg");
+    background-size: cover;
+  }
+
+  footer{
+    background-image: url('../resources/bkgnd-footer-about-us.png');
+    background-size: cover;
+  }
+
+  section:nth-child(1) p {
+    width: 50%;
+    display: block;
+  }  
+
+  section:nth-child(2) p {
+    padding-top: 50px;
+    width: 80%;
+    display: inline-block;
+  }
+}

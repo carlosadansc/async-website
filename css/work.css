@@ -1,0 +1,105 @@
+/*Mobile view styles--------------------------------------------------------------------------------------------------------------*/
+section:nth-child(1) {
+    background-image: url("../resources/bkgnd-s1-work.jpg");
+    background-size: cover;
+  }
+
+  section:nth-child(1) p {
+    width: 50%;
+    display: none;
+  }  
+  
+  .colage-container {
+    align-items: flex-start;
+    margin-top: 30px
+  }
+
+  .colage-image-container{
+    position: relative;
+  }
+
+  .colage-image-container:hover .overlay{
+    opacity: 1;
+  }
+
+  .colage-image-container:hover .colage-text-image{
+    opacity: 1;
+  }
+
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.8);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+  }
+
+  .colage-text-image{
+    text-align: left;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+  }
+
+  .column-1{
+      width: 100%;
+      float: left;
+      text-align: center;
+  }
+
+  .column-2{
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  .colage-container img{
+    width: 98%;
+    padding: 10px 0 10px 0;
+    vertical-align: text-top;
+  }
+
+  footer{
+    background-image: url('../resources/bkgnd-footer-work-mobile.jpg');
+    background-size: cover;
+  }
+
+
+  /*Tablet view styles--------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Desktop view styles----------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+  
+  footer{
+    background-image: url('../resources/bkgnd-footer-work.jpg');
+    background-size: cover;
+  }
+
+  section:nth-child(1) p {
+    display: block;
+  }
+
+  .column-1{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.column-2{
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+}
